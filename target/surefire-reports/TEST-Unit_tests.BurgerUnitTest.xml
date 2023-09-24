@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="Unit_tests.BurgerUnitTest" time="1.189" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="Unit_tests.BurgerUnitTest" time="1.092" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2023.1.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,9 +65,9 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="Unit_tests.BurgerUnitTest" name="getPriceTest" time="1.176"/>
+  <testcase classname="Unit_tests.BurgerUnitTest" name="getPriceTest" time="1.081"/>
   <testcase classname="Unit_tests.BurgerUnitTest" name="addIngredientTest" time="0.002"/>
   <testcase classname="Unit_tests.BurgerUnitTest" name="moveIngredientTest" time="0.001"/>
-  <testcase classname="Unit_tests.BurgerUnitTest" name="removeIngredientTest" time="0.002"/>
-  <testcase classname="Unit_tests.BurgerUnitTest" name="getReceiptTest" time="0.008"/>
+  <testcase classname="Unit_tests.BurgerUnitTest" name="removeIngredientTest" time="0.001"/>
+  <testcase classname="Unit_tests.BurgerUnitTest" name="getReceiptTest" time="0.007"/>
 </testsuite>
