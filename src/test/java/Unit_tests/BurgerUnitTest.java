@@ -11,6 +11,7 @@ import praktikum.Burger;
 import praktikum.Ingredient;
 import praktikum.IngredientType;
 
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
 
@@ -40,7 +41,7 @@ public class BurgerUnitTest {
         burger.addIngredient(ingredient_sauce);
         burger.addIngredient(ingredient_sauce);
 
-        System.out.println(burger.getPrice());
+        assertEquals(burger.getPrice(), 1000F, 0);
     }
 
     @Test
@@ -56,9 +57,9 @@ public class BurgerUnitTest {
 
         burger.moveIngredient(1, 2);
 
-        Assert.assertEquals(ingredient_sauce, burger.ingredients.get(0));
-        Assert.assertEquals(dinosaur, burger.ingredients.get(1));
-        Assert.assertEquals(cutlet, burger.ingredients.get(2));
+        assertEquals(ingredient_sauce, burger.ingredients.get(0));
+        assertEquals(dinosaur, burger.ingredients.get(1));
+        assertEquals(cutlet, burger.ingredients.get(2));
 
     }
 
@@ -75,8 +76,8 @@ public class BurgerUnitTest {
 
         burger.removeIngredient(1);
 
-        Assert.assertEquals(ingredient_sauce, burger.ingredients.get(0));
-        Assert.assertEquals(dinosaur, burger.ingredients.get(1));
+        assertEquals(ingredient_sauce, burger.ingredients.get(0));
+        assertEquals(dinosaur, burger.ingredients.get(1));
 
     }
 
@@ -92,9 +93,9 @@ public class BurgerUnitTest {
         burger.addIngredient(dinosaur);
 
 
-        Assert.assertEquals(ingredient_sauce, burger.ingredients.get(0));
-        Assert.assertEquals(cutlet, burger.ingredients.get(1));
-        Assert.assertEquals(dinosaur, burger.ingredients.get(2));
+        assertEquals(ingredient_sauce, burger.ingredients.get(0));
+        assertEquals(cutlet, burger.ingredients.get(1));
+        assertEquals(dinosaur, burger.ingredients.get(2));
 
     }
 
@@ -129,7 +130,7 @@ public class BurgerUnitTest {
                 "\n" +
                 "Price: 500.000000\n";
 
-        Assert.assertEquals(expectedResult, burger.getReceipt());
+        assertEquals(expectedResult, burger.getReceipt());
     }
 
 }
